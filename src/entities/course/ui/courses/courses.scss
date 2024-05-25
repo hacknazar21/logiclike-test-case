@@ -1,0 +1,8 @@
+.courses {
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: repeat(3, minmax(177px ,1fr));
+  row-gap: 18px;
+  column-gap: 18px;
+  align-items: flex-start;
+}
