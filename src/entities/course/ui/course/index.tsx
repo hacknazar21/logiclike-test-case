@@ -1,17 +1,18 @@
-import React from 'react';
+import React, {CSSProperties} from 'react';
 
 import './course.scss';
 import {ICourse} from "@entities";
 
 interface CourseCardProps {
     course: ICourse;
+    style: CSSProperties;
 }
 
 export const CourseCard = React.memo(({
-                                          course
+                                          course, style
                                       }: CourseCardProps) => {
     return (
-        <article className='course-card'>
+        <article style={style} className='course-card'>
             <div className="course-card__image-box" style={{
                 backgroundColor: course.bgColor
             }}>

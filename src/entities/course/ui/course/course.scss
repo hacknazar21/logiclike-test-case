@@ -1,6 +1,8 @@
 .course-card {
   box-shadow: 0 10px 13px -4px rgba(35, 35, 95, 0.19);
   border-radius: 18px;
+  height: 100%;
+  max-height: 228px;
   &__image-box {
     display: flex;
     align-items: center;
